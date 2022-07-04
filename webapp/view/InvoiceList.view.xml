@@ -4,7 +4,7 @@
 		xmlns:mvc="sap.ui.core.mvc"
     xmlns:html="http://www.w3.org/1999/xhtml">
   <VBox>
-    <html:canvas id="myCanvas2" width="512" height="500">
+    <html:canvas id="myCanvas2" width="800" height="600">
     </html:canvas>
   </VBox>
 </mvc:View>
