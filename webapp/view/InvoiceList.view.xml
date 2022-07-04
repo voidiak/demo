@@ -1,0 +1,10 @@
+<mvc:View
+		controllerName="sap.ui.demo.walkthrough.controller.InvoiceList"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc"
+    xmlns:html="http://www.w3.org/1999/xhtml">
+  <VBox>
+    <html:canvas id="myCanvas2" width="512" height="500">
+    </html:canvas>
+  </VBox>
+</mvc:View>
