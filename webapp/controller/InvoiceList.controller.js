@@ -26,6 +26,7 @@ sap.ui.define([
 			renderer.setSize( canElm.width, canElm.height );
 
 			scene = new THREE.Scene();
+			scene.background = new THREE.Color( 0x949494 );
 			// camera
 
 			camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
@@ -62,7 +63,7 @@ sap.ui.define([
 
 			// points
 
-			let dodecahedronGeometry = new THREE.DodecahedronGeometry( 10 );
+			let dodecahedronGeometry = new THREE.BoxBufferGeometry( 8,8,8 );
 
 			// if normal and uv attributes are not removed, mergeVertices() can't consolidate indentical vertices with different normal/uv data
 
@@ -98,9 +99,12 @@ sap.ui.define([
 
 			// convex hull
 
-			const meshMaterial = new THREE.MeshLambertMaterial( {
-				color: 0xffffff,
+			const meshMaterial = new THREE.MeshStandardMaterial( {
+				color: new THREE.Color().setHSL( Math.random(), 1, 0.75 ),
 				opacity: 0.5,
+				roughness:0.5,
+				metalness: 0,
+				flatshading: 0,
 				transparent: true
 			} );
 

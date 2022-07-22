@@ -19,8 +19,7 @@
 		</headerContent>
 		<content>
 			<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel"/>
-			<!-- <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList"/> -->
-			<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.Viewport"/>
+			<mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList"/>
 		</content>
 	</Page>
 </mvc:View>
